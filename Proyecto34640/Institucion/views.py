@@ -75,5 +75,15 @@ def profesoresFormulario(request):
 
     return render(request, "profesoresFormulario.html", {"miFormulario":miFormulario})
 
-#def buscarEstudiante(request):
-#    return render (request, "estudiantesBuscar.html")
+def busquedaEstudiante(request):
+    return render (request, "busquedaEstudiante.html")
+
+def resultadoBusqEst(request):
+
+    if request.GET["nombre"]:
+        nombre = request.GET["nombre"]
+        estudiantes = Estudiante.objects.filter(nombre = nombre)
+        return render(request, "resultadoBusqEst.html", {"estudiantes":estudiantes})
+    else:
+        return render(request, "busquedaNula.html")
+

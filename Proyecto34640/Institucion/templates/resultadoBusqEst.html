@@ -1,0 +1,33 @@
+{% extends "padre.html" %}
+        {% load static %}
+    {% block titulo %}
+    <h3> Resultados de la busqueda: </h3>
+
+
+    <ul>
+
+
+    {% if estudiantes %}
+    Se encontraron los siguientes estudiantes:
+    
+    </ul>
+    {% for estudiante in estudiantes %}
+    <p><li><b>Nombre:</b> {{ estudiante.nombre }} <b>Apellido:</b> {{ estudiante.apellido }} <p><b>Email:</b> {{ estudiante.email }} </p></li> </p>
+    {% endfor %}
+
+    {% else %}
+    <h5>No se encontro ningun estudiante</h5>
+
+    {% endif %}
+    
+
+    {% endblock %}
+
+
+    {% block contenidoQueCambia %}
+
+    <a class="btn btn-primary" href="{% url 'estudiantesFormulario' %}">Ingresar nuevo estudiante</a> 
+
+    <a class="btn btn-primary" href="{% url 'busquedaEstudiante' %}">Buscar un estudiante</a>
+
+    {% endblock %}

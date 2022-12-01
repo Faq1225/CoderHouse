@@ -10,5 +10,6 @@ urlpatterns = [
     path('estudiantesFormulario/', estudiantesFormulario, name = "estudiantesFormulario"),
     path('profesoresFormulario/', profesoresFormulario, name = "profesoresFormulario"),
     path('materiasFormulario/', materiasFormulario, name = "materiasFormulario"),
-    #path('buscarEstudiante', buscarEstudiante, name = "buscarEstudiante"),
+    path('busquedaEstudiante/', busquedaEstudiante, name = "busquedaEstudiante"),
+    path('resultadoBusqEst/', resultadoBusqEst, name = "resultadoBusqEst"),
 ]
