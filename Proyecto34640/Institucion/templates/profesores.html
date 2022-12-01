@@ -1,5 +1,10 @@
 {% extends "padre.html" %}
         {% load static %}
+    {% block titulo %}
+    <h1> Bienvenido a la pagina de Profesores </h1>
+    {% endblock %}
     {% block contenidoQueCambia %}
+
+    <a class="btn btn-primary" href="{% url 'profesoresFormulario' %}">Ingresar nuevo profesor</a> 
 
     {% endblock %}

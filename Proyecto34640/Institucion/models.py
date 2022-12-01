@@ -16,4 +16,3 @@ class Profesor(models.Model):
 
 class Materia(models.Model):
     nombre = models.CharField(max_length = 40)
-    aprobada = models.BooleanField()
