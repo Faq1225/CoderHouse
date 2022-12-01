@@ -1,4 +1,2 @@
 from django.http import *
-
-def saludo(request):
-    return HttpResponse("Probando")
+from django.template import loader
