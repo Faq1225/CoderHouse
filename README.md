@@ -26,7 +26,7 @@ Una vez en la URL de inicio, veremos en la parte superior de la pagina 4 botones
 
 A su vez, dentro de la pagina de estudiantes, materias y profesores, veremos botones que nos permiten ingresar nuevos estudiantes, materias y profesores a la base de datos.
 
-La pagina de estudiantes tambien cuenta con un boton para buscar segun el **_nombre_** un estudiante dentro de la base de datos
+La pagina de estudiantes tambien cuenta con un boton para buscar un estudiante en la base de datos segun el **_nombre_**
 
 ### Listado de rutas disponibles
 
